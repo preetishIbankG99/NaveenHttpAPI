@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.qa.test.PostAPITest">
+        <methods>
+          <include name="setUp"/>
+          <include name="postAPITest"/>
+        </methods>
+      </class> <!-- com.qa.test.PostAPITest -->
+      <class name="com.qa.test.GetAPITest">
+        <methods>
+          <include name="getAPITestWithHeaders"/>
+          <include name="setUp"/>
+          <include name="getAPITestWithoutHeaders"/>
+        </methods>
+      </class> <!-- com.qa.test.GetAPITest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
